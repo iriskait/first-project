@@ -1,7 +1,6 @@
 .body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-        background-color: #FFFFFF;
+    font-family: "Inter Tight", sans-serif;
+    background-color: #7a3145;
 }
 
 h1,
@@ -44,25 +43,49 @@ img {
 
 
 
-
+.container {
+    width: 375px;
+    height: 520px;
+}
 
 
 .footer { 
-    display: flex;
-    padding: 50px 100px; 
+    
     background-color: #7a3145;
-    margin: 0 auto;
-   flex-wrap: wrap;
 }
 
 .footer-container {
-        display: flex;
-        max-width: 1080px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 320px;
 }
+.footer-container-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 
+  .footer-logo {
+
+  }
+
+.footer-text {
+    font-family: "Inter Tight", sans-serif;
+     color: #fbfbfb;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.28571;
+        max-width: 296px;
+    }
+    
 .footer-menu-link {
     display: block;
-    font-size: 32px;
+    font-size: 28px;
         font-weight: 600;
         line-height: 1;
     font-family: "Inter Tight", sans-serif;
@@ -71,39 +94,14 @@ img {
     column-gap: 25px;
 }
 
-
-.footer-container-logo {
-margin-right: 302px;
-}
-
-.footer-text {
-    font-family: "Inter Tight", sans-serif;
-     color: #fbfbfb;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.25;
-        max-width: 265px;
-    }
-
-    .footer-menu-list {
-        margin-right: 121px;
-        max-width: 177px;
-    }
-    .footer-container-logo {
-        display: block;
-    }
-.footer-address {
-    justify-content: flex-end;
-}
-    .footer-address-list {
-        font-size: 18px;
+    .footer-contacts-list {
+        font-size: 14px;
         font-weight: 600;
-        line-height: 1.11111;
+        line-height: 1.28571;
         max-width: 215px;
         font-family: "Inter Tight", sans-serif;
         color: #fbfbfb;
         letter-spacing: -0.01em;
-        justify-content: flex-end;
         margin: auto 0;
         
     }
