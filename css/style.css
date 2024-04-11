@@ -50,71 +50,78 @@ img {
 
 .footer { 
     background-color: #7a3145;
-   
 }
-
+  
 .footer-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 40px;
-    /* padding-right: 20px;
-    padding-left: 20px; */
-}
-
-/* .footer-logo-item {
-    display: flex;
-    justify-content: flex-start;
-} */
-.footer-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 20px;
+  }
+  
+  .footer-container-logo {
     display: flex;
     flex-direction: column;
   }
-.footer-links-icons {
+  
+  .footer-logo {
+    width: 168px;
+     height: 16px;
+     margin-bottom: 16px;
+  }
+  
+.footer-logo-links {
+    display: inline-flex;
+}
+  .footer-links-icons {
     fill: #fbfbfb;
+    gap: 4px
 }
   
-/* .footer-logo {
-    display: flex;
-} */
-.footer-logo-wrap {
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-text {
-    font-family: "Inter Tight", sans-serif;
-     color: #fbfbfb;
+  .footer-text {
+        font-family: "Inter Tight", sans-serif;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.28571;
+        color: #fbfbfb;
         max-width: 296px;
-        margin-bottom: 40px;
+        margin-bottom: 26px;
     }
+  
+  .footer-menu-wrap {
+    width: 155px;
+  height: 112px;
+  flex-direction: column;
+  font-size: 28px;
+      font-weight: 600;
+      line-height: 1;
+  font-family: "Inter Tight", sans-serif;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  }
+ 
+  .footer-menu-link {
     
-.footer-menu-link {
-    flex-direction: column;
     font-size: 28px;
         font-weight: 600;
         line-height: 1;
     font-family: "Inter Tight", sans-serif;
     letter-spacing: -0.01em;
     color: #fbfbfb;
-    gap: 14px;
-    max-width: 155px;
-}
-
-.footer-menu-list {
     display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 14px;
-  flex-grow: 1;
-  margin-bottom: 40px;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 14px;
+    flex-grow: 1;
+    /* margin-top: 40px;
+    gap: 14px; */
+    min-width: 155px;
+    
+
+  }
 
 .footer-contacts-list {
     display: flex;
@@ -123,6 +130,8 @@ img {
   justify-content: flex-start;
   gap: 14px;
   flex-grow: 1;
+  margin-top: 40px;
+  
 }
 
     .footer-contacts-item {
@@ -142,6 +151,9 @@ img {
        justify-content: space-between;
     }
 
+    .footer-privacy {
+        
+    }
     .footer-privacy-item {
         font-size: 12px;
         font-weight: 500;
