@@ -143,6 +143,10 @@ img {
 
 
     @media screen and (min-width: 768px) {
+      .mobile-menu {
+        display: none;
+      }
+
         .container {
               max-width: 1157px;
               height: auto;
@@ -154,9 +158,9 @@ img {
           }
 
           .footer-logo {
-            width: 194px;
-             height: 18px;
-             margin-bottom: 25px;
+            max-width: 194px;
+             max-height: 18px;
+             /* margin-bottom: 25px; */
           } 
 
 .footer-container {
@@ -165,6 +169,7 @@ img {
         justify-content: space-between;
         flex-wrap: wrap;
         max-width: 704px;
+        height: auto;
         }
         
 
@@ -229,22 +234,26 @@ justify-content: space-between;
 
 
 @media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
     .container {
         max-width: 1280px; 
         padding-top: 50px;
       padding-left: 100px;
+    
     }
 
     .footer-container {
-      align-items: baseline;
-      flex-direction: row;
-      justify-content: flex-start;
+      /* align-items: baseline; */
+      /* flex-direction: row; */
+      /* justify-content: flex-start; */
       min-width: 1080px;
       height: auto;
       }
       
-.footer-logo { 
-          margin-right: 302px;
+.footer-menu-list { 
+          margin-left: 302px;
         }
 
 .footer-text {
@@ -257,40 +266,40 @@ justify-content: space-between;
 
 .footer-menu-section {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   min-width: 513px;
 }
 
 .footer-menu-link {
             font-size: 32px;
                 font-weight: 600;
-                line-height: 1;
+              
     }
 
-.footer-contacts-list {
-        /* display: flex;
-      align-items: flex-start;
-      justify-content: flex-start; */
-      /* height: 85px; */
-      /* padding-top: 50px;
-      margin: 0 auto; */
-      } 
+    .footer-contacts-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    } 
 
-    .footer-contacts-item {
-      justify-content: flex-start;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.11111;
-       width: 215px;
-        margin-left: 121px;
+  .footer-contacts-item {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.11111;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 121px;
 }
 
-.footer-privacy-item {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.11111;
-    max-width: 1080px;
-    color: rgba(251, 251, 251, 0.5);
+
+.footer-privacy {
+  min-width: 1080px;
+}
+
+.footer-privacy-block {
+ display: flex;
+ margin-top: 125px;
+justify-content: space-between; 
 }
 
 }
