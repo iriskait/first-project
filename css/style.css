@@ -45,7 +45,7 @@ img {
 
 .container {
     min-width: 375px;
-    height: 520px;
+    height: auto;
 }
 
 .footer { 
@@ -71,13 +71,10 @@ img {
      height: 16px;
      margin-bottom: 16px;
   }
-  
-.footer-logo-links {
-    display: inline-flex;
-}
+
   .footer-links-icons {
     fill: #fbfbfb;
-    gap: 4px
+    /* gap: 4px; */
 }
   
   .footer-text {
@@ -89,18 +86,6 @@ img {
         max-width: 296px;
         margin-bottom: 26px;
     }
-/*   
-  .footer-menu-wrap {
-    width: 155px;
-  height: 112px;
-  flex-direction: column;
-  font-size: 28px;
-      font-weight: 600;
-      line-height: 1;
-  font-family: "Inter Tight", sans-serif;
-  letter-spacing: -0.01em;
-  color: #fbfbfb;
-  } */
  
   .footer-menu-link {
     font-size: 28px;
@@ -112,11 +97,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
     margin-top: 14px;
     flex-grow: 1;
     min-width: 155px;
-
   }
 
 .footer-contacts-list {
@@ -127,7 +110,6 @@ img {
   gap: 14px;
   flex-grow: 1;
   margin-top: 40px;
-  
 }
 
     .footer-contacts-item {
@@ -143,36 +125,32 @@ img {
 
 .footer-privacy-block {
         display: flex;
-        /* margin-top: 80px; */
        justify-content: space-between;
-
+       margin-top: 80px;
     }
 
     .footer-privacy-item {
         font-size: 12px;
         font-weight: 500;
         line-height: 1.16667;
-        max-width: 215px;
+        min-width: 215px;
         font-family: "Inter Tight", sans-serif; 
         color: rgba(251, 251, 251, 0.5);
         padding-right: 20px;
-        padding-left: 20px;
         padding-bottom: 40px;
-
     }
    
+
+
     @media screen and (min-width: 768px) {
         .container {
               max-width: 1157px;
-              /* padding: 0; */
               height: auto;
-              /* margin: 0; */
           }
 
           .footer {
-            padding-top: 12px;
+            /* padding-top: 12px; */
             padding-left: 12px;
-  
           }
 
           .footer-logo {
@@ -180,15 +158,13 @@ img {
              height: 18px;
              margin-bottom: 25px;
           } 
+
 .footer-container {
     display: flex;
-        /* align-items: baseline; */
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* column-gap: 0; */
-        width: 704px;
-            /* padding-top: 32px; */
+        max-width: 704px;
         }
         
 
@@ -200,14 +176,17 @@ img {
             color: #fbfbfb;
         }
 
+  /* .footer-menu-list {
+    margin: 0 auto;
+  } */
 
 .footer-menu-link {
             font-size: 32px;
                 font-weight: 600;
                 line-height: 1;
             min-width: 177px;
-            margin-top: 25px;
-
+            margin-top: 0;
+            margin-bottom: 25px;
     }
 
 .footer-contacts-list {
@@ -225,29 +204,29 @@ img {
         font-weight: 600;
         line-height: 1.11111;
         max-width: 215px;
-        /* padding: 0; */
-        /* margin: auto 0;  */
 }
 
 .footer-privacy {
+  min-width: 704px;
+}
+
+.footer-privacy-block {
  display: flex;
  margin-top: 100px;
- justify-content: space-between; */
-
+justify-content: space-between; 
 }
 
 .footer-privacy-item {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.11111;
-  max-width: 704px;
   color: rgba(251, 251, 251, 0.5);
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-bottom: 20px;
+}
+}
 
-}
-}
+
+
+
 
 @media screen and (min-width: 1280px) {
     .container {
@@ -258,7 +237,6 @@ img {
     }
 
     .footer {
-      /* padding-top: 50px; */
       padding-left: 100px;
     }
 
@@ -291,9 +269,6 @@ img {
             font-size: 32px;
                 font-weight: 600;
                 line-height: 1;
-            /* max-width: 177px; */
-            /* margin-top: 25px; */
-
     }
 
 .footer-contacts-list {
@@ -303,10 +278,6 @@ img {
       height: 85px;
       padding-top: 50px;
       margin: 0 auto;
-      /* min-width: 177px; */
-      /* gap: 25px; */
-      /* margin-top: 100px; */
-     
       } 
 
     .footer-contacts-item {
@@ -315,8 +286,6 @@ img {
         font-weight: 600;
         line-height: 1.11111;
        width: 215px;
-        /* padding: 0;
-        margin: auto 0;   */
         margin-left: 121px;
 }
 
