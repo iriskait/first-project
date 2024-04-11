@@ -116,10 +116,7 @@ img {
     justify-content: flex-start;
     margin-top: 14px;
     flex-grow: 1;
-    /* margin-top: 40px;
-    gap: 14px; */
     min-width: 155px;
-    
 
   }
 
@@ -149,11 +146,9 @@ img {
         display: flex;
         margin-top: 80px;
        justify-content: space-between;
+
     }
 
-    .footer-privacy {
-        
-    }
     .footer-privacy-item {
         font-size: 12px;
         font-weight: 500;
